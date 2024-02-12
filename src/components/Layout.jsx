@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 
 export const Layout = () => {
   return (
     <>
-      <div>
+      <div className="w-full h-screen bg-slate-50 justify-between items-center">
         <div>
-          <Navbar />
-        </div>
-        <div>
-          <Outlet />
+          <div className={``}>
+            <Navbar />
+          </div>
+          <div className="">
+            <Outlet />
+          </div>
         </div>
       </div>
     </>

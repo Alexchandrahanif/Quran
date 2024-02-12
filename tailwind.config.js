@@ -6,13 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        primary: "#795547",
+        secondary: "#CA9B79",
+        background: "#FFFAF5",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
+        Bree: ["Bree Serif", "serif"],
       },
     },
     screens: {
@@ -24,5 +25,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
