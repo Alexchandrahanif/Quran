@@ -5,12 +5,12 @@ import Navbar from "./Navbar";
 export const Layout = () => {
   return (
     <>
-      <div className="w-full h-screen bg-slate-50 justify-between items-center">
+      <div className="w-full h-screen">
         <div>
-          <div className={``}>
+          <div className="w-full  bg-white sticky top-0 z-10 ">
             <Navbar />
           </div>
-          <div className="">
+          <div className="w-full">
             <Outlet />
           </div>
         </div>

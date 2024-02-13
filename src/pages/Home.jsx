@@ -24,8 +24,6 @@ const Home = () => {
     navigate(`/${id}`);
   };
 
-  console.log(surah);
-
   return (
     <div className="p-2 w-full flex bg-slate-50 sm:p-4 sm:justify-center ">
       {/* Surah */}
