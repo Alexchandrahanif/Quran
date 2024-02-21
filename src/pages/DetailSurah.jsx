@@ -68,7 +68,7 @@ const DetailSurah = () => {
         </div>
         <div>
           {surah?.data?.ayat.map((el) => (
-            <div key={el.id}>
+            <div key={el.nomorAyat}>
               <p className="">{el.nomorAyat}</p>
               <p>{el.teksArab}</p>
               <p>{el.teksLatin}</p>

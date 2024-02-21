@@ -6,14 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#795547",
-        secondary: "#CA9B79",
+        primary: "#009462",
+        secondary: "#98C6B9",
+        third: "#EAF5F1",
         background: "#FFFAF5",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
         Bree: ["Bree Serif", "serif"],
+        play: ["Playfair Display", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
     screens: {

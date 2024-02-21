@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
 import { Layout } from "../components/Layout";
 import DetailSurah from "../pages/DetailSurah";
-import Doa from "../pages/Doa";
-import DetailDoa from "../pages/DetailDoa";
+import Home from "../pages/Home";
 
 const router = createBrowserRouter([
   {
@@ -17,14 +15,6 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <DetailSurah />,
-      },
-      {
-        path: "/doa",
-        element: <Doa />,
-      },
-      {
-        path: "/doa/:id",
-        element: <DetailDoa />,
       },
     ],
   },

@@ -4,5 +4,6 @@ import dark2 from "./dark2.svg";
 import doa from "./doa.svg";
 import sun from "./sun.svg";
 import time from "./time.svg";
+import numberic from "./numberic.svg";
 
-export { home, dark1, dark2, doa, sun, time };
+export { home, dark1, dark2, doa, sun, time, numberic };
