@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { numberic } from "../assets";
 
@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   return (
-    <div className="p-2 w-full flex bg-slate-50 sm:p-4 sm:justify-center">
+    <div className="p-2 w-full flex flex-col bg-slate-50 sm:p-4 sm:justify-center">
       {/* Surah */}
       <div className="flex flex-wrap w-full sm:justify-center">
         {surah.data?.map((el) => (
@@ -63,6 +63,15 @@ const Home = () => {
             </div>
           </button>
         ))}
+      </div>
+
+      <div className="flex justify-center items-center py-10">
+        <button
+          className=" w-20 h-10 bg-sky-600 rounded-lg"
+          onClick={() => navigate("/scan")}
+        >
+          scan
+        </button>
       </div>
     </div>
   );
