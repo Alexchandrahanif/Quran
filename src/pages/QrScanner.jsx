@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Html5QrcodeScanner } from "html5-qrcode";
 
-const QrScanner = ({ onScan }) => {
-  // const videoRef = useRef(null);
-  // const [cameraAllowed, setCameraAllowed] = useState(false);
-
+const QrScanner = () => {
   const [scanResult, setScanResult] = useState(null);
 
   useEffect(() => {
@@ -21,31 +18,14 @@ const QrScanner = ({ onScan }) => {
     }
 
     function error(error) {
-      console.warn(error);
+      console.log(error);
     }
   }, []);
 
   return (
     <div>
       <h1>QR Code Scanner</h1>
-      {/* <div>
-        {cameraAllowed ? (
-          <>
-            <video
-              id="qr-video"
-              ref={videoRef}
-              width="100%"
-              playsInline
-              autoPlay
-            ></video>
-            <button onClick={() => setCameraAllowed(false)}>
-              Stop Scanner
-            </button>
-          </>
-        ) : (
-          <button onClick={() => setCameraAllowed(true)}>Start Scanner</button>
-        )}
-      </div> */}
+
       {scanResult ? (
         <div>
           <p>success</p>
