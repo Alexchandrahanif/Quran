@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import DetailSurah from "../pages/DetailSurah";
 import Home from "../pages/Home";
+import QrScanner from "../pages/QrScanner";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <DetailSurah />,
+      },
+      {
+        path: "/scan",
+        element: <QrScanner />,
       },
     ],
   },
